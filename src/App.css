@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+/* Default dark theme */
+body, .dark-theme {
+  background-color: #1e1e2f;
+  color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light-theme {
+  background-color: #f2f2f2;
+  color: #111;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Navbar */
+.navbar {
+  background-color: #111827;
   color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.light-theme .navbar {
+  background-color: #e2e8f0;
+  color: #111;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a {
+  margin-left: 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.course-card {
+  background-color: #2a2a40;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+.light-theme .course-card {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Button */
+.button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+/* Progress bar */
+.progress-bar {
+  background: #444;
+  border-radius: 4px;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress-fill {
+  background: #3b82f6;
+  height: 10px;
+}
+
+.light-theme .progress-bar {
+  background: #e2e8f0;
+}
+
+.light-theme .progress-fill {
+  background: #2563eb;
+}
+
+/* Search box */
+.search-box {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
